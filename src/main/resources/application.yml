@@ -1,0 +1,23 @@
+micronaut:
+  application:
+    name: micronautStudy
+
+datasources:
+  read:
+    read-only: true
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: expresso
+    password: cafe
+    driver-class-name: org.postgresql.Driver
+
+  read-write:
+    read-only: false
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: expresso
+    password: cafe
+    driver-class-name: org.postgresql.Driver
+
+netty:
+  default:
+    allocator:
+      max-order: 3
